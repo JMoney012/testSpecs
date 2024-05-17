@@ -1,8 +1,17 @@
-// creating app variables
+function logIn(username, password) {
+    if (username.length === 0 || password.length === 0) {
+        return false;
+    } else  if (username=== "luke" || password === "pass"){
+        return true;
+    } else {
+        return false;
+    }
+}
 
-const tax = .07;
-const tip = .2;
-let bill = prompt('Enter your bill amount:')
-bill = Number(bill);
-console.log(bill+(bill*tax)+(bill*tip));
+function createAccount(){
 
+}
+
+
+
+module.exports = {logIn};
